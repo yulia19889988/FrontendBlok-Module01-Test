@@ -41,8 +41,12 @@ ul {
 }
 
 ul>li {
+   margin-right: 30px; 
+}
+ul>li:not(:last-child)::after{
+   content: ;
    margin-right: 30px;
-   }
+}
 
 .box {
    display: flex;
@@ -55,17 +59,26 @@ ul>li {
    background-color: lavender;
    padding: 10px 20px;
    }
-section {
+
+.block section {
    background-color: lavender;
    padding: 5px 20px;
    margin-bottom: 20px;
-   }
+   } 
 
+.block section:first-child{
+   background-color: moccasin;
+}
+.link{
+   background-color: rebeccapurple;
+   color: white;
+   padding: 8px 15px;
+}
 .post {
    padding-bottom: 20px;
    }
 
-footer {
+.footer {
    padding: 0px 20px;
    font-size: 13px;
    }
